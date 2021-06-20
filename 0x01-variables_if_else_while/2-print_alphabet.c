@@ -3,7 +3,7 @@
 /**
  * main - prints the alphabet
  *
- * Return 0.
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -13,8 +13,6 @@ int main(void)
 	{
 		putchar(c);
 
-	
-	putchar('\n');
 
 	}
 
