@@ -1,4 +1,4 @@
-#include "holberton"
+#include "holberton.h"
 
 /**
  * _isalpha - Checks if a character is alphabetic.
