@@ -1,25 +1,21 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
-  * print_rev - Prints a string in reverse
-  * @s: The string to print
-  *
-  * Return: void
-  */
+ * print_rev - print a string, in reverse, followed by a new line
+ * @s: the string to print
+ *
+ * Return: void
+ */
 void print_rev(char *s)
 {
-	int c = 0;
+	char *t = s;
 
-	while (s[c] != '\0')
+	if (s)
 	{
-		c++;
+		while (*t)
+			++t;
+		while (s < t--)
+			_putchar(*t);
+		_putchar('\n');
 	}
-
-	for (c -= 1; c >= 0; c--)
-	{
-		_putchar(s[c]);
-	}
-
-	_putchar('\n');
 }
