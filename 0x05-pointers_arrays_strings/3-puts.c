@@ -6,10 +6,10 @@
  */
 void _puts(char *str)
 {
-	for (; *str != '\0'; str++)
+	if (str)
 	{
-		_putchar(*str);
+		while (*str)
+			_putchar(*str++);
+		_putchar('\n');
 	}
-
-	_putchar('\n');
 }
